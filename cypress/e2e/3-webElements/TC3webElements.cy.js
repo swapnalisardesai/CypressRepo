@@ -1,7 +1,5 @@
 
 ///<reference types="cypress"/>
-
-
 describe('web elements methods', function () {
     //type()
     it('type():type on input elements', function () {
@@ -11,7 +9,6 @@ describe('web elements methods', function () {
         cy.get('[name="email"]').type("swapnali.sardesai@gmail.com")
         cy.get('[name="message"]').type('learning cypress')
     })
-
     //click()
     it('click():click on function', function () {
         cy.visit('https://webdriveruniversity.com/Contact-Us/contactus.html')
