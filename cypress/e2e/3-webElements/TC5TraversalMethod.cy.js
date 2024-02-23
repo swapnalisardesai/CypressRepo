@@ -1,6 +1,7 @@
 ///<reference types="cypress"/>
 
 describe('traversal methods', function () {
+ 
     //1.children()
     it('.children() command.To get children of DOM elements.', function () {
         cy.visit('https://www.webdriveruniversity.com/Data-Table/index.html')
@@ -101,19 +102,19 @@ describe('traversal methods', function () {
     })
 
      //16.parent()
-     it.only('.parent() command.To get parent DOM element of elements', function () {
+     it('.parent() command.To get parent DOM element of elements', function () {
         cy.visit('https://www.webdriveruniversity.com/Data-Table/index.html')
         cy.get('#milk').parent().should('have.class','traversal-drinks-list')
     })
 
     //17.parents()
-    it.only('.parents() command.To get parents DOM element of elements', function () {
+    it('.parents() command.To get parents DOM element of elements', function () {
         cy.visit('https://www.webdriveruniversity.com/Data-Table/index.html')
         cy.get('#milk').parents().should('have.class','traversal-drinks-list')
     })
 
     //18.parentsUntil()
-    it.only('.parentsUntil() command.To get parents DOM element of elements until other element', function () {
+    it('.parentsUntil() command.To get parents DOM element of elements until other element', function () {
         cy.visit('https://www.webdriveruniversity.com/Data-Table/index.html')
         cy.get('#coffee').parentsUntil('.thumbnail').should('have.length',1)
     })
